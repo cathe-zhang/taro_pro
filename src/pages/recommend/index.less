@@ -1,0 +1,71 @@
+.text-overflow-1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text-overflow-2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.textOrient {
+	display: -webkit-box;
+
+	-webkit-box-orient: vertical;
+
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+
+.recommend-index-container {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 106px);
+  
+  .search-bar {
+    height: 84px;
+  }
+  .list {
+    flex: 1;
+    overflow: auto;
+    .item {
+      display: flex;
+      align-items: flex-start;
+      padding: 30px 20px;
+      border-bottom: 1px solid #ebebeb;
+      
+      .left {
+        overflow: hidden;
+        flex: 1;
+        
+        .index {
+          color: #ff4a4a;
+        }
+        .main {
+          overflow: hidden;
+          
+          .title {
+            .text-overflow-2;
+            .textOrient;
+            font-size: 32px;
+            color: #222;
+          }
+          .hot {
+            margin-top: 20px;
+            font-size: 24px;
+            color: #666;
+          }
+        }
+      }
+      .image {
+        width: 300px;
+        height: 200px;
+        background-color: #ccc;
+      }
+    }
+  }
+}
