@@ -36,6 +36,7 @@ class App extends Component {
       'pages/recommend/index',
       'pages/widgets/index',
       'pages/widgets/listItem/cartItem',
+      'pages/widgets/timeBounce/index',
     ],
     window: {
       backgroundTextStyle: 'light',

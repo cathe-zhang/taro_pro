@@ -8,7 +8,20 @@ class Index extends Component {
        navigationBarTitleText: ''
   }
 
-  state={}
+  state={
+    list: [
+      {
+        title: '购物车item',
+        arrow: 'right',
+        jumpRoute: '/pages/widgets/listItem/cartItem'
+      },
+      {
+        title: '数字跳跃',
+        arrow: 'right',
+        jumpRoute: '/pages/widgets/timeBounce/index'
+      },
+    ]
+  }
 
   componentWillMount () {}
   componentDidMount () {} 
@@ -25,13 +38,20 @@ class Index extends Component {
   }
   
   render() {
+    const { list } = this.state
     return (
       <View>
-        <AtListItem 
-          title="购物车item"
-          arrow="right"
-          onClick={this.handleItemClick.bind(this, '/pages/widgets/listItem/cartItem')}
-        />
+        {
+          list.map((item,index)=>{
+            return (
+              <AtListItem 
+                title={item.title}
+                arrow={item.arrow}
+                onClick={this.handleItemClick.bind(this, item.jumpRoute)}
+              />
+            )
+          })
+        }
       </View>
     );
   }
