@@ -5,7 +5,7 @@
   "description": "知乎taro",
   "main": "index.js",
   "scripts": {
-    "start": "taro build --type h5",
+    "start": "npm run build:h5 -- --watch",
     "build:weapp": "taro build --type weapp",
     "build:swan": "taro build --type swan",
     "build:alipay": "taro build --type alipay",
