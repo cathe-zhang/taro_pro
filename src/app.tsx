@@ -29,6 +29,7 @@ class App extends Component {
   config: Config = {
     pages: [
       'pages/zIndex/index',
+      'pages/gaokao/index',
       'pages/thought/index',
       'pages/university/index',
       'pages/notice/index',
