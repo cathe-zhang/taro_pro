@@ -56,6 +56,7 @@
     "babel-plugin-transform-jsx-stylesheet": "^0.6.5",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
+    "editorconfig": "^0.15.3",
     "eslint": "^4.19.1",
     "eslint-config-taro": "1.2.26",
     "eslint-plugin-import": "^2.12.0",

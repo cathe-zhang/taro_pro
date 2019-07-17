@@ -44,7 +44,7 @@ class Index extends Component {
     console.log('componentWillReact')
   }
 
-  componentDidMount () { 
+  componentDidMount () {
     this.queryDataList()
   }
 
@@ -70,7 +70,7 @@ class Index extends Component {
 
   // scrollView滚动到底部
   scrollToBottom = () => {
-    console.log('滚动到底部');
+		console.log('滚动到底部');
     this.queryDataList()
   }
 
@@ -107,7 +107,7 @@ class Index extends Component {
                         </View>
                       </View>
                       <View className="image">
-                        
+
                       </View>
                     </View>
                   )
